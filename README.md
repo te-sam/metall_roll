@@ -20,13 +20,13 @@ POSTGRES_PORT=5432
 ```
 docker compose up -d
 ```
-
+---
 ### FastAPI app
 Url : 
 ```
 https://localhost:7777
 ```
-
+---
 ### Postgres
 Url : 
 ```
