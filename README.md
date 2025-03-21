@@ -1,6 +1,7 @@
 # MetallRoll
 
 ### Компоненты
+* FastAPI
 * Postgres 17
 
 ---
