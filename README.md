@@ -9,11 +9,17 @@
 
 Создайте файл .env-non-dev в корне проекта и добавьте в него следующие переменные:
 ```
+MODE=DEV
+
+POSTGRES_DB=metal_roll_db
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
-POSTGRES_DB=metal_roll_db
-POSTGRES_HOST=db
-POSTGRES_PORT=5432
+
+DB_HOST=db
+DB_PORT=5432
+DB_USER=postgres
+DB_PASS=postgres
+DB_NAME=metal_roll_db
 ```
 
 Используйте команду 
