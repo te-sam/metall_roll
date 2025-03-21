@@ -8,8 +8,18 @@
 
 ### Запуск 
 Путь /metall_roll
+```
+Создайте файл .env-non-dev в корне проекта и добавьте в него следующие переменные:
+
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=metal_roll_db
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
 
 ```
+Используйте команду 
+
 docker compose up -d
 ```
 ### FastAPI app
