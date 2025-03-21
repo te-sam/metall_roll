@@ -18,7 +18,8 @@ services:
       - .env-non-dev
     depends_on:
       - db
-    command: ["/metall_roll/docker/app.sh"]
+    #command: ["/metall_roll/docker/app.sh"]
+    command: sh -c "alembic upgrade head && gunicorn app.main:app --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind=0.0.0.0:8000"
     ports:
       - 7777:8000
 

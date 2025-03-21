@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Literal, Optional
 
 from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
@@ -13,11 +13,11 @@ class Settings(BaseSettings):
     DB_PASS: str
     DB_NAME: str
 
-    TEST_DB_HOST: str
-    TEST_DB_PORT: int
-    TEST_DB_USER: str
-    TEST_DB_PASS: str
-    TEST_DB_NAME: str
+    TEST_DB_HOST: Optional[str] = None
+    TEST_DB_PORT: Optional[int] = None
+    TEST_DB_USER: Optional[str] = None
+    TEST_DB_PASS: Optional[str] = None
+    TEST_DB_NAME: Optional[str] = None
 
     model_config = ConfigDict(env_file=".env")
 
