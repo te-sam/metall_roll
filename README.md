@@ -4,8 +4,6 @@
 * Postgres 17
 
 ---
-
-
 ### Запуск 
 Путь /metall_roll
 ```
@@ -21,7 +19,9 @@ POSTGRES_PORT=5432
 Используйте команду 
 
 docker compose up -d
+
 ```
+
 ### FastAPI app
 Url : 
 ```
